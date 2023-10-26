@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#shows the content of the current directory, in a list format, where only the part of the name after the first dash is shown.
+
+for m in *
+do
+	echo "$m" | cut -d '-' -f2
+done
