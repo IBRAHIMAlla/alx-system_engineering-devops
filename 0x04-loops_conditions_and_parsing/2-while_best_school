@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # "Best School" 10 times.
 
-i=m
+m=1
 while [ $m -le 10 ]
 do
     echo "Best School"
