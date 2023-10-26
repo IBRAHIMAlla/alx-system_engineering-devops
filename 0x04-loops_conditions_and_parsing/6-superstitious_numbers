@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# numbers from 1 to 20 and, 4 and then bad luck from China for the 4th loop iteration, 9 and then bad luck from Japan for the 9th loop iteration, 17 and then bad luck from Italy for the 17th loop iteration
+
+m=1
+while [ $m -le 20 ]
+do
+	case $m in
+		4)
+			echo -e "$m\nbad luck from China"
+			;;
+		9)
+			echo -e "$m\nbad luck from Japan"
+			;;
+		17)
+			echo -e "$m\nbad luck from Italy"
+			;;
+		*)
+			echo -e "$m"
+			;;
+	esac
+	((m++))
+done
