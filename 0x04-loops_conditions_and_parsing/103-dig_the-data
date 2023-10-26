@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# data is organized by IP and HTTP status code and then presented to group visitors.
+
+awk '{print $1 " " $9}' < apache-access.log | sort | uniq -c | sort -gr
