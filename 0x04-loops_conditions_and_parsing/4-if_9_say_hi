@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# "Best School" 10 times, but for the 9th iteration, "Best School" and then "Hi" on a new line.
+
+m=1
+while [ $m -le 10 ]
+do
+    echo "Best School"
+    if [ $m -eq 9 ]
+        then echo "Hi"
+    fi
+    ((m++))
+done
