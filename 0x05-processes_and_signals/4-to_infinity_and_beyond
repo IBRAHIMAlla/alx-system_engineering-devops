@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 # shows To infinity and beyond indefinitely. 
 
-for (( ; ; ))
+m="1"
+while [ $m -eq 1 ]
 do
-    echo "To infinity and beyond"
-    sleep 2
+echo "To infinity and beyond"
+$"sleep" "2"
 done
