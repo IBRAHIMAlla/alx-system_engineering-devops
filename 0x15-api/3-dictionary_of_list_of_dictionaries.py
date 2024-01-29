@@ -19,7 +19,8 @@ if __name__ == "__main__":
         tl = []
         for t in td:
             if t.get('userId') == us.get('id'):
-                tDict = {"username": us.get('username'),
+                tDict = {
+                            "username": us.get('username'),
                             "task": t.get('title'),
                             "completed": t.get('completed')}
                 tl.append(tDict)
